@@ -7,5 +7,6 @@
 
     <!-- Include the existing ConstraintLayout within the FrameLayout -->
     <include layout="@layout/fragment_home" />
+    <include layout = "@layout/fragment_history"/>
 
 </FrameLayout>

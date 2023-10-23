@@ -29,8 +29,8 @@ class RegistrationFragment : AppCompatActivity() {
             val textView14 = findViewById<TextView>(R.id.textView14)
             textView14.setOnClickListener {
 
-                val intent2 = Intent(this, LoginFragment::class.java)
-                startActivity(intent2)
+                val intentbackToLogin    = Intent(this, LoginFragment::class.java)
+                startActivity(intentbackToLogin)
             }
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
@@ -46,7 +46,7 @@ class RegistrationFragment : AppCompatActivity() {
                     if (newPassword.equals(confirmPassword)) {
                         if (savedata == true) {
                             Toast.makeText(this, "SignUp Successful", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(applicationContext, registerButton::class.java)
+                            val intent = Intent(applicationContext, LoginFragment::class.java)
                             startActivity(intent)
                         } else {
                             Toast.makeText(this, "User Exists", Toast.LENGTH_SHORT).show()

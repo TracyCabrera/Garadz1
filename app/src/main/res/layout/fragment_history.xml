@@ -7,22 +7,17 @@
     android:background="@drawable/img_4"
     tools:context=".HistoryFragment">
 
-
     <View
-        android:id="@+id/view16"
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="700dp"
         android:background="@drawable/custom_bar"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="84dp" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/upper_bar"
@@ -31,36 +26,30 @@
         android:text="History"
         android:textColor="#595656"
         android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_appbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118"
-        tools:ignore="MissingConstraints" />
-
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.196" />
 
     <View
-        android:id="@+id/view17"
-        android:layout_width="377dp"
-        android:layout_height="43dp"
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:background="@drawable/line"
-        app:layout_constraintBottom_toBottomOf="@+id/bottom_appbar"
-        app:layout_constraintEnd_toEndOf="@+id/view16"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="206dp" />
+
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
@@ -80,16 +69,9 @@
         android:layout_height="75dp"
         android:background="@android:color/transparent"
         app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993"
         app:menu="@menu/bottom_menu"
-        tools:ignore="MissingConstraints">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="784dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -98,12 +80,9 @@
         android:src="@drawable/parking_icon"
         app:flow_horizontalBias="0.498"
         app:flow_verticalBias="0.933"
-        app:layout_constraintBottom_toBottomOf="@+id/bottom_appbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="755dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
