@@ -12,9 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MyApplication"
         tools:targetApi="31">
-
-
-
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Host"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginFragment"
             android:exported="true">
@@ -24,10 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".RegistrationFragment">
-        </activity>
+        <activity android:name=".RegistrationFragment" />
     </application>
 
 </manifest>

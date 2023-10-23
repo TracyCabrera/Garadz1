@@ -209,17 +209,7 @@
         app:layout_constraintVertical_bias="0.692"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottom_appbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:gravity="bottom"
-            app:fabCradleMargin="10dp"
-            app:fabCradleRoundedCornerRadius="50dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="784dp"
-            tools:ignore="BottomAppBar,MissingConstraints"/>
+>
 
 
 

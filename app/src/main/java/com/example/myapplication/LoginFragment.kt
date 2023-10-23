@@ -51,7 +51,7 @@ class LoginFragment : AppCompatActivity() {
 
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                    var intentHome = Intent(this,HomeFragment::class.java)
+                    var intentHome = Intent(this,HomeActivity::class.java)
                     startActivity(intentHome)
                     finish()
                 }

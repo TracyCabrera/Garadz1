@@ -20,18 +20,20 @@ class RegistrationFragment : AppCompatActivity() {
         val registerButton = findViewById(R.id.registerButton) as Button
         val dbHelper = DBHelper(this)
 
+        val textView14 = findViewById<TextView>(R.id.textView14)
+        textView14.setOnClickListener {
+
+            val intentbackToLogin    = Intent(this, LoginFragment::class.java)
+            startActivity(intentbackToLogin)
+        }
+
         registerButton.setOnClickListener {
             val username = username.text.toString()
             val newPassword = newPassword.text.toString()
             val confirmPassword = confirmPassword.text.toString()
             val savedata = dbHelper.insertdata(username, newPassword)
 
-            val textView14 = findViewById<TextView>(R.id.textView14)
-            textView14.setOnClickListener {
 
-                val intentbackToLogin    = Intent(this, LoginFragment::class.java)
-                startActivity(intentbackToLogin)
-            }
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
                         confirmPassword

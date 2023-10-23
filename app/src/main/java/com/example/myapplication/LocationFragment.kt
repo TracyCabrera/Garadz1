@@ -11,11 +11,7 @@ import com.example.myapplication.databinding.FragmentProfileBinding
 
 class LocationFragment : Fragment() {
     private lateinit var binding: FragmentLocationBinding
-    private var homeFragment = HomeFragment()
-    private var locationFragment = LocationFragment()
-    private var bookingFragment = BookingFragment()
-    private var historyFragment = HistoryFragment()
-    private var profileFragment = ProfileFragment()
+
 
 
 
@@ -24,8 +20,6 @@ class LocationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentLocationBinding.inflate(inflater, container, false)
-
         return inflater.inflate(R.layout.fragment_container, container, false)
     }
 
@@ -33,33 +27,6 @@ class LocationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.bottomNavigationView.setOnItemSelectedListener { item ->
-            when(item.itemId){
-                R.id.home -> {
-                    replaceFragment(homeFragment)
-                }
-                R.id.location -> {
-                    replaceFragment(locationFragment)
-                }
-                R.id.fab -> {
-                    replaceFragment(bookingFragment)
-                }
-                R.id.history -> {
-                    replaceFragment(historyFragment)
-                }
-                R.id.profile -> {
-                    replaceFragment(profileFragment)
-                }
-            }
-            true
 
         }
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        val transaction = childFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragmentContainer, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
 }
